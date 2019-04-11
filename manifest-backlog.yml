@@ -4,9 +4,9 @@ applications:
   instances: 1
   memory: 256M
   routes:
-  - route: pal-tracker-allocations-database-krsidd-backlog.apps.evans.pal.pivotal.io
+  - route: backlog-krsidd.apps.evans.pal.pivotal.io
   path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-allocations-database-krsidd-review.apps.evans.pal.pivotal.io/
+    REGISTRATION_SERVER_ENDPOINT: https://registration-krsidd.apps.evans.pal.pivotal.io/
   services:
   - tracker-backlog-database
